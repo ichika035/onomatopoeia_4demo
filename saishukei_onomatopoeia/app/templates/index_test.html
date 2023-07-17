@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Desu Adder</title>
+  </head>
+  <body>
+    <form method="POST">
+      <input type="text" name="user_input" required>
+      <input type="submit" value="Submit">
+    </form>
+    {% if user_input %}
+      <p>Your input with 'desu': {{ user_input }}</p>
+    {% endif %}
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="POST">
+            <input type="text" name="user_input">
+            <input type="submit">
+        </form>
+        <p>{{ user_input }}</p>
+    </body>
+</html>

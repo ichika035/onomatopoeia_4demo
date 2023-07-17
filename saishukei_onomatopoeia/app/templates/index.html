@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onomatopoeia Generation</title>
+</head>
+<body>
+    <form method="POST">
+        <textarea name="text"></textarea>
+        <button type="submit">Generate</button>
+    </form>
+    <div>
+        {% for result in results %}
+        <p>{{ result }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
